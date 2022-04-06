@@ -1,0 +1,47 @@
+#container{
+    width: 1280px;
+    margin: auto;
+    height: 94vh;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+#slidebar{
+    width: 5120px;
+    position: relative;
+    animation: animate 20s none infinite;
+}
+/*20s-> 100%
+1s-> 5%
+4s->20%*/
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -1280px;
+    }
+    45%{
+        left: -1280px;
+    }
+    50%{
+        left: -2560px;
+    }
+    70%{
+        left: -2560px;
+    }
+    75%{
+        left: -3840px;
+    }
+    95%{
+        left: -3840px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+#slidebar img{
+    float: left;
+}
